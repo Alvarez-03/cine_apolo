@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla</title>
+    <script src="sillas.js"></script>
+    <link rel="shortcut icon" href="img/teatro_apolo.ico">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="estilos/sillas.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/buscador.js"></script>
+    <script src="scripts/sillas.js"></script>
+    <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+    <!--Encabezado-->
+    <header class="">
+        <nav class="">
+             <!--menu desplegable-->
+            <div>
+                <a class="btn btn-primary " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="boton-menu">
+                    Menu
+                </a>
+                <div class="offcanvas offcanvas-start" id="offcanvasExample"  >
+                    <button id="menu-desplegable-button">
+                        <a href="index.html">Cartelera</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="hoy.html">Hoy</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="Proximamente.html">Proximamente</a>
+                    </button>
+
+                </div>
+            </div>
+
+            <!--logo del cine-->
+            <img src="img/teatro_apolo.png" alt="" id="logo_cine"  >
+
+            <!--Buscador peliculas-->
+            <form class=" container col" id="form_buscador_peliculas">
+                <div id="input-Buscador">
+                    <input class="form-control " id="buscador" type="search" placeholder="Buscar Pelicula" aria-label="Search">
+                </div>
+                <div id="boton-buscar-container">
+                    <button class="btn btn-primary " id="buscar-button" type="submit" onclick="buscar()">Buscar</button>
+                </div>
+            </form>
+
+         <!--Ingresar-->
+        <input class="btn btn-primary" id="boton-ingresar" type="button" value="Ingresar">
+        
+        </nav>
+    </header>
+
+    <!--Alerta-->
+    <div class="container" id="alert-pelicula">
+        <span><b>Pelicula no encontrada</b></span>
+        <button class="btn btn-secondary" onclick="Oalert()">X</button>
+    </div>
+    <div class="container" id="alert-compra">
+        <span><b>Compra exitosa</b></span>
+        <button class="btn btn-secondary" onclick="Oalert_compra()">X</button>
+    </div>
+    
+    <!--Texto Pantalla-->
+    <section class="container" id="text-pantalla">
+        <h2>PANTALLA</h2>
+    </section>
+    <!--Sillas contenedor-->
+    <section id="content-sillas" class="container ">
+
+        <div id="lateral-izq">
+            <button onclick="ocupar(this)" data-id="silla1"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla2"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla3"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla4"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla5"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla6"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla7"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla8"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla9"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla10"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+        </div>
+    
+        <div id="centro">
+            <button onclick="ocupar(this)" data-id="silla11" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla12" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla13" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla14" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla15" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla16" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla17" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla18" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla19" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla20" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla21" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla22" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla23" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla24" id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla25"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla26"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla27"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla28"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla29"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla30"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla31"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla32"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla33"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla34"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla35"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+        </div>
+
+        <div id="lateral-der">
+            <button onclick="ocupar(this)" data-id="silla36"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla37"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla38"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla39"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla40"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla41"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla42"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla43"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla44"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+            <button onclick="ocupar(this)" data-id="silla45"id="button-silla">
+                <span class="material-symbols-outlined silla-color">weekend</span>
+            </button>
+        </div>
+
+        <button type="reset" onclick="limpiar()" class="btn btn-secondary" id="button_bottom">Limpiar</button>
+        <h2 id="button_bottom">Teatro Apolo</h2>
+        <button onclick="compra_exitosa()" class="btn btn-secondary" id="button_bottom">Comprar</button>
+        
+    </section>
+        <!--Pie de pagina-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="img/teatro_apolo.png" alt="logo teatro_apolo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Mas de 35 años regalando sonrisas a niños y adultos</p>
+                    <p>Somos una empresa colombiana dedicada a compartir emociones</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#"class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-x"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                    <div class="formulario-contacto">
+                        <button type="button" >
+                            <a href="formulario_contacto.html">CONTACTANOS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy;2024 <b>Teatro Apolo</b> - Todos los derechos reservados</small>
+            </div>
+        </footer>
+</body>
+</html>

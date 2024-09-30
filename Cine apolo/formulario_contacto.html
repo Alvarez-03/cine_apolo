@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/formulario_contacto.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <img src="img/teatro_apolo.png" alt="logo_cine">
+        <div class="titulo-head">
+            <p>Programacion de la semana <br> 22 - 29 de septiembre 2024
+            </p>
+            <a href="index.html">Teatro Apolo</a>
+        </div>
+    </header>
+    <section class="formulario container" >
+        <form action="" method="post">
+            <p>Escribenos tu duda, idea o sugerencia</p>
+            <input type="text"id="nombre" required placeholder="Ingrese su nombre">
+            <input type="email" name="email" required id="email" placeholder="Ingrese su email">
+            <select name="asunto" id="asunto">
+                <option value="otromotivo">OTRO MOTIVO</option>
+                <option value="trabajaconnosotros">TRABAJA CON NOSOTROS</option>
+                <option value="objetosperdidos">OBJETOS PERDIDOS</option>
+                <option value="empresa">EMPRESA</option>
+            </select>
+            <textarea name="mensaje"  id="mensaje"placeholder="Deja tu mensaje "></textarea>
+            <input type="file"  name="archivoadjunto" id="archivo_adjunto" value="Adjuntar archivo">
+            <label for="">
+                <input type="checkbox" required>He leido y doy consentimiento expreso a la politica de privacidad de datos personales del Teatro Apolo S.A
+            </label>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+    <footer class="pie-pagina">
+        <div class="enlaces">
+            <a href="index.html">Secciones Web</a>
+            <a href="https://www.google.com/maps">Otros Cines Apolo</a>
+            <a href="https://www.youtube.com">Eventos</a>
+            <a href="https://www.google">Ayuda</a>
+        </div>
+        <div class="copyr"></div>
+            <small>&copy;2024 <b>Teatro Apolo</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+#body{
+    background-color: rgb(237, 237, 237);
+}
+/*encabezado*/
+header{
+    position: sticky;  
+    top: 0%; 
+    filter: drop-shadow(2px 2px  10px rgb(0, 38, 255));
+    z-index: 1000;
+}
+/*navegador*/
+nav{
+    background-color: rgb(0, 38, 255);
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 5% 15% 60% 20%;
+    align-items: center;
+} 
+/*encabezado menu desplegable*/
+#boton-menu{
+    height: max-content;
+    width: max-content;
+    margin: 10px ;
+
+}
+#offcanvasExample{
+    width: max-content ;
+    height: 50rem;
+    align-items: center;
+}
+#menu-desplegable-button{
+    background-color: rgb(0, 38, 255);
+    width: 10rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+#menu-desplegable-button a{
+    text-decoration: none;
+    color: white;
+}
+/*encabezado*/
+#logo_cine{
+    width: 60px;
+    margin-left: 3rem;
+    border-radius: 50%;
+}
+#form_buscador_peliculas{
+    width: 35rem;
+    height: max-content;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#input-Buscador{
+    width: 400px;
+    margin-right: 1rem;
+}
+#boton-buscar-container{
+    width: 260px;
+    display: grid;
+    justify-content: center;
+}
+#buscar-button{
+    width: min-content;
+}
+#boton-ingresar{
+    width: min-content;
+    margin-left: 11rem;
+}
+/*Alerta pelicula no encontrada*/
+#alert-pelicula{
+    position: absolute;
+    display: none;
+    text-align: center;
+    left: 40%;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(2, 57, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 10000;
+    margin: 0px;
+    width: max-content;
+    border-radius: 1rem;
+}
+#alert-fechas{
+    position: absolute;
+    display: none;
+    text-align: center;
+    left: 40%;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(2, 57, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 10000;
+    margin: 0px;
+    width: max-content;
+    border-radius: 1rem;
+}
+
+/*COMPRAR ENTRADA*/
+#container-comprar-entrada{
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(10, 10, 10);
+    filter: drop-shadow(2px 2px  10px rgb(44, 44, 44));
+    justify-content: center;
+}
+#fecha{
+    color: #fff;
+}
+#container-comprar-entrada h3{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 5px;
+
+}
+#info_fechas{
+    display: none;
+}
+#horario{
+    padding: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    justify-content: space-between;
+    background-color:   rgb(0, 38, 255);
+    color: #fff;
+    border: none;
+    
+}
+#horario:hover{
+    background-color: rgb(236, 164, 0);
+    filter: drop-shadow(2px 2px  10px rgb(255, 255, 255));
+}  
+
+/*SIPNOSIS*/
+
+#container-sipnosis{
+    width: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+#container-text-sipnosis{
+    padding: 2rem;
+
+}
+#container-img{
+    margin-top: 2rem;
+
+}
+
+/*Pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+    border-radius: 80px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color:rgb(2, 57, 255);
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 50%;
+
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(236, 164, 0);
+}    
+
+.pie-pagina .grupo-2{
+    background-color: rgb(1, 37, 171);
+    text-align: center;
+    color: #fff;
+}
+/*boton de contacto */
+.pie-pagina .formulario-contacto button{
+    height: 45px;
+    width: 150px;
+    margin: 50px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 164, 0);
+    border-radius: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #e7e7e7;
+}
+.pie-pagina .formulario-contacto button:hover{
+    background-color: rgb(0, 38, 255)
+}
+.pie-pagina .formulario-contacto button:active{
+    background-color: #fff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.pie-pagina .formulario-contacto button a{
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}

@@ -1,0 +1,169 @@
+/*encabezado*/
+header{
+    position: sticky;  
+    top: 0%; 
+    filter: drop-shadow(2px 2px  10px rgb(0, 38, 255));
+    z-index: 1000;
+}
+/*navegador*/
+nav{
+    background-color: rgb(0, 38, 255);
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 5% 15% 60% 20%;
+    align-items: center;
+} 
+/*encabezado menu desplegable*/
+#boton-menu{
+    height: max-content;
+    width: max-content;
+    margin: 10px ;
+
+}
+#offcanvasExample{
+    width: max-content ;
+    height: 50rem;
+    align-items: center;
+}
+#menu-desplegable-button{
+    background-color: rgb(0, 38, 255);
+    width: 10rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+#menu-desplegable-button a{
+    text-decoration: none;
+    color: white;
+}
+/*encabezado*/
+#logo_cine{
+    width: 60px;
+    margin-left: 3rem;
+    border-radius: 50%;
+}
+#form_buscador_peliculas{
+    width: 35rem;
+    height: max-content;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#input-Buscador{
+    width: 400px;
+    margin-right: 1rem;
+}
+#boton-buscar-container{
+    width: 260px;
+    display: grid;
+    justify-content: center;
+}
+#buscar-button{
+    width: min-content;
+}
+
+/*Alerta pelicula no encontrada*/
+#alert-pelicula{
+    position: absolute;
+    display: none;
+    text-align: center;
+    left: 40%;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(2, 57, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 10000;
+    margin: 0px;
+    width: max-content;
+    border-radius: 1rem;
+}
+#alert-fechas{
+    position: absolute;
+    display: none;
+    text-align: center;
+    left: 40%;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(2, 57, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 10000;
+    margin: 0px;
+    width: max-content;
+    border-radius: 1rem;
+}
+
+
+/*COMPRAR ENTRADA*/
+#container-comprar-entrada{
+    display: grid;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(10, 10, 10);
+    filter: drop-shadow(2px 2px  10px rgb(44, 44, 44));
+    justify-items: center;
+    align-items: center;
+}
+#fecha{
+    color: #fff;
+    font-weight: bolder;
+    font-size:large;
+    margin-right: 1rem;
+}
+#date_input{
+    padding: 5px;
+    text-align: center;
+    margin: 1rem;
+}
+#container-comprar-entrada h3{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 5px;
+
+}
+#button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*horarios*/
+#info_fechas{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-horarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: rgb(0, 81, 255);
+    filter: drop-shadow(2px 2px  10px rgb(0, 0, 0));
+    transition: 0.5s;
+}
+#card-horarios:hover{
+    background-color: rgb(0, 57, 180);
+}
+#img-container img{
+    border-radius: 10px;
+}
+#horario{
+    padding: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    background-color:   rgb(0, 38, 255);
+    color: #fff;
+    border: none;
+    
+}
+#horario:hover{
+    background-color: rgb(236, 164, 0);
+    filter: drop-shadow(2px 2px  10px rgb(255, 255, 255));
+}

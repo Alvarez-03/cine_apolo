@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guason 2</title>
+    <link rel="stylesheet" href="estilos/sipnosis.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/sipnosis.js"></script>
+    <script src="scripts/buscador.js"></script>
+    <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/teatro_apolo.ico">
+</head>
+<body id="body">
+    
+    <header class="">
+        <nav class="">
+            <!--menu desplegable-->
+            <div>
+                <a class="btn btn-primary " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="boton-menu">
+                    Menu
+                </a>
+                <div class="offcanvas offcanvas-start" id="offcanvasExample"  >
+                    <button id="menu-desplegable-button">
+                        <a href="index.html">Cartelera</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="hoy.html">Hoy</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="Proximamente.html">Proximamente</a>
+                    </button>
+                </div>
+            </div>
+
+            <!--logo del cine-->
+            <img src="img/teatro_apolo.png" alt="" id="logo_cine" class="col" >
+
+            <!--Buscador peliculas-->
+            <form class=" container col" id="form_buscador_peliculas">
+                <div id="input-Buscador">
+                    <input class="form-control " id="buscador" type="search" placeholder="Buscar Pelicula" aria-label="Search">
+                </div>
+                <div id="boton-buscar-container">
+                    <button class="btn btn-primary " id="buscar-button" type="submit" onclick="buscar()">Buscar</button>
+                </div>
+            </form>
+
+        <!--Ingresar-->
+        <input class="btn btn-primary" id="boton-ingresar" type="button" value="Ingresar">
+        
+        </nav>
+    </header>
+
+    <!--alert-->
+    <div class="container" id="alert-pelicula">
+        <span><b>Pelicula no encontrada</b></span>
+        <button class="btn btn-secondary" onclick="Oalert()">X</button>
+    </div>
+    <div class="container" id="alert-fechas">
+        <span><b>Fecha no disponible</b></span>
+        <button class="btn btn-secondary" onclick="Oalert_fechas()">X</button>
+    </div>
+
+
+    <!--Comprar entrada-->
+    <section id="container-comprar-entrada" class="container-fluid ">
+        
+        <h3>Comprar entrada</h3>
+        
+        <div id="button-container">
+            <label for="date_input" id="fecha">Fecha</label>
+            <input type="date" name="fecha" id="date_input" >
+            <button  onclick="mostrar()" class="btn btn-primary">Buscar sala</button>
+        </div>
+        
+        <div id="info_fechas">
+            <button type="button"  id="horario" onclick="location.href='silla.html'" >11:00AM</button>
+            <button type="button"  id="horario" onclick="location.href='silla.html'">03:45PM</button>
+            <button type="button"  id="horario" onclick="location.href='silla.html'">06:45PM</button>
+            <button onclick="ocultar()" class="btn btn-primary">Cerrar</button>
+        </div>
+    </section>
+    <!--sipnosis-->
+    <section  id="container-sipnosis" class="container">
+        <div id="container-img">
+            <img src="img/joker2-poster.jpg" alt="joker-2-poster" id="img-poster" width="200px">
+        </div>
+        <div id="container-text-sipnosis">
+            <h2>Sipnosis Guason</h2>
+            <p>
+                Secuela de "Joker (2019), de nuevo con Phoenix como Arthur Fleck, 
+                y que muestra su relación con el personaje de Harley Quinn, interpretado por Lady Gaga.
+            </p>
+        </div>
+        <div id="container-fichatecnica">
+            <div>
+                <h4>Genero: Drama, Thriller</h4>
+            </div>
+            <div>
+                <h4>Duracion: 138 mins </h4>
+            </div>
+            <div>
+                <h4>Clasificacion: Pendiente </h4>
+            </div>
+        </div>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/teatro_apolo.png" alt="logo teatro_apolo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Mas de 35 años regalando sonrisas a niños y adultos</p>
+                <p>Somos una empresa colombiana dedicada a compartir emociones</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-x"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div class="formulario-contacto">
+                    <button type="button" >
+                        <a href="formulario_contacto.html">CONTACTANOS</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2024 <b>Teatro Apolo</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>

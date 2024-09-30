@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatro Apolo</title>
+    <link rel="shortcut icon" href="img/teatro_apolo.ico">
+    <link rel="stylesheet" href="estilos/index.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="scripts/buscador.js"></script>
+    <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <!--Encabezado-->
+    <header>
+        <nav>
+             <!--menu desplegable-->
+            <div>
+                <a class="btn btn-primary " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="boton-menu">
+                    Menu
+                </a>
+                <div class="offcanvas offcanvas-start" id="offcanvasExample"  >
+                    <button id="menu-desplegable-button">
+                        <a href="index.html">Cartelera</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="hoy.html">Hoy</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="Proximamente.html">Proximamente</a>
+                    </button>
+                </div>
+            </div>
+
+            <!--logo del cine-->
+            <a href="index.html"> <img src="img/teatro_apolo.png" alt="" id="logo_cine" > </a>
+
+            <!--Buscador peliculas-->
+            <form class=" container col" id="form_buscador_peliculas" >
+                <div id="input-Buscador">
+                    <input class="form-control " type="search" id="buscador" placeholder="Buscar Pelicula" aria-label="Search">
+                </div>
+                <div id="boton-buscar-container">
+                    <button class="btn btn-primary " id="buscar-button" type="submit" onclick="buscar()" >Buscar</button>
+                </div>
+            </form>
+
+         <!--Ingresar-->
+        <input class="btn btn-primary" id="boton-ingresar" type="button" value="Ingresar">
+        
+        </nav>
+    </header>
+
+    <!--Sub menu-->
+    <section class="container" id="subMenu">
+        <div id="boton-submenu">
+            <button type="button" class="btn btn-primary"><a href="index.html">Todas las peliculas</a>
+            </button>
+        </div>
+        <div id="boton-submenu" >
+            <button type="button" class="btn btn-primary"><a href="hoy.html">Hoy</a>
+            </button>
+        </div>
+        <div id="boton-submenu">
+            <button type="button" class="btn btn-primary"><a href="Proximamente.html">Proximamente</a>
+            </button>
+        </div>
+        <div id="boton-submenu">
+            <button class="btn btn-primary"><a href="seleccionar_fecha.html">Seleccionar fecha</a>
+            </button>
+        </div>
+    </section>
+
+    <!--alert-->
+    <div class="container" id="alert-pelicula">
+        <span><b>Pelicula no encontrada</b></span>
+        <button class="btn btn-secondary" onclick="Oalert()">X</button>
+    </div>
+
+    <!--Seccion peliculas-->
+    <section class="container my-5 py-5" id="seccion-card">
+        <!--guason 2-->
+        <div id="card-pelicula">
+        <a href="sipnosis_guason.html" id="trailer">
+            <div >
+                <img src="img/joker2-poster.jpg" alt="joker-2-poster" id="img-poster">
+            </div>
+            <div id="titulo-pelicula">
+                <h5 >
+                    Guasón 2
+                </h5>
+            </div>
+            <div class="row" id="clasificaciones-pelicula">
+                <h6 id="clasificacion" class="col">Drama</h6>
+                <h6 id="clasificacion" class="col">Thriller</h6>
+
+            </div>
+            <div id="link-trailer">
+                <a href="https://www.youtube.com/watch?v=01UXuz00UkI&ab_channel=WarnerBros.PicturesLatinoam%C3%A9rica" type="button" class="btn btn-primary"> 
+                    Ver Trailer
+                </a>
+            </div>
+        </a>
+        </div>
+
+        <!--Transformers Uno-->
+        <div id="card-pelicula">
+            <a href="sipnosis_transformers.html" id="trailer">
+                <div >
+                    <img src="img/Transformers-uno-pelicula-poster.jpg" alt="joker-2-poster" id="img-poster">
+                </div>
+                <div id="titulo-pelicula">
+                    <h5 >
+                        Transformers Uno
+                    </h5>
+                </div>
+                <div class="row" id="clasificaciones-pelicula">
+                    <h6 id="clasificacion" class="col">Accion</h6>
+                    <h6 id="clasificacion" class="col">Animada</h6>
+    
+                </div>
+                <div id="link-trailer">
+                    <a href="https://www.youtube.com/watch?v=9ALy7A-gD40&ab_channel=PARAMOUNTPICTURESM%C3%89XICO" type="button" class="btn btn-primary"> 
+                        Ver Trailer
+                    </a>
+                </div>
+            </a>
+        </div>
+
+        <!--Caceria Sangrienta-->
+        <div id="card-pelicula">
+            <a href="sipnosis_caceria_sangrienta.html" id="trailer">
+                <div >
+                    <img src="img/caceria-sangrienta-poster.jpg" alt="joker-2-poster" id="img-poster">
+                </div>
+                <div id="titulo-pelicula">
+                    <h5 >
+                        Caceria Sangrienta
+                    </h5>
+                </div>
+                <div class="row" id="clasificaciones-pelicula">
+                    <h6 id="clasificacion" class="col">Terror</h6>
+                    <h6 id="clasificacion" class="col">Suspenso</h6>
+    
+                </div>
+                <div id="link-trailer">
+                    <a href="https://www.youtube.com/watch?v=nkXcokdlZa4&ab_channel=ElT%C3%ADoGolpetazo" type="button" class="btn btn-primary"> 
+                        Ver Trailer
+                    </a>
+                </div>
+            </a>
+        </div>
+
+        <!--Romper el circulo-->
+        <div id="card-pelicula">
+            <a href="sipnosis_romper_circulo.html" id="trailer">
+                <div >
+                    <img src="img/romper-el-circulo-poster.jpg" alt="joker-2-poster" id="img-poster">
+                </div>
+                <div id="titulo-pelicula">
+                    <h5 >
+                        Romper El Circulo
+                    </h5>
+                </div>
+                <div class="row" id="clasificaciones-pelicula">
+                    <h6 id="clasificacion" class="col">Drama</h6>
+                    <h6 id="clasificacion" class="col">Romantica</h6>
+    
+                </div>
+                <div id="link-trailer">
+                    <a href="https://www.youtube.com/watch?v=aT_IzP2eJaU&ab_channel=SonyPicturesEspa%C3%B1a" type="button" class="btn btn-primary"> 
+                        Ver Trailer
+                    </a>
+                </div>
+            </a>
+        </div>
+
+        <!--Mi villano favorito-->
+        <div id="card-pelicula">
+            <a href="sipnosis_villa_favorito.html" id="trailer">
+                <div >
+                    <img src="img/mi-villano-favorito-4-poster.jpg" alt="joker-2-poster" id="img-poster">
+                </div>
+                <div id="titulo-pelicula">
+                    <h5 >
+                        Mi Villano Favorito 4
+                    </h5>
+                </div>
+                <div class="row" id="clasificaciones-pelicula">
+                    <h6 id="clasificacion" class="col">Drama</h6>
+                    <h6 id="clasificacion" class="col">Romantica</h6>
+    
+                </div>
+                <div id="link-trailer">
+                    <a href="https://www.youtube.com/watch?v=_H2_qY9oILY&ab_channel=ComedyCentralLatinoam%C3%A9rica" type="button" class="btn btn-primary"> 
+                        Ver Trailer
+                    </a>
+                </div>
+            </a>
+        </div>
+
+        <!--Venom-->
+        <div id="card-pelicula">
+            <a href="sipnosis_venom.html" id="trailer">
+                <div >
+                    <img src="img/venom_poster.jpg" alt="joker-2-poster" id="img-poster">
+                </div>
+                <div id="titulo-pelicula">
+                    <h5 >
+                        Venom El Ultimo Baile
+                    </h5>
+                    <h6 id="proximamente-text">Pronto</h6>
+                </div>
+                <div class="row" id="clasificaciones-pelicula">
+                    <h6 id="clasificacion" class="col">Accion</h6>
+                    <h6 id="clasificacion" class="col">Aventura</h6>
+    
+                </div>
+                <div id="link-trailer">
+                    <a href="https://www.youtube.com/watch?v=OEi8ox6oppg&ab_channel=SonyPicturesM%C3%A9xico" type="button" class="btn btn-primary"> 
+                        Ver Trailer
+                    </a>
+                </div>
+            </a>
+            </div>
+    </section>
+
+    <!--Pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="img/teatro_apolo.png" alt="logo teatro_apolo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Mas de 35 años regalando sonrisas a niños y adultos</p>
+                <p>Somos una empresa colombiana dedicada a compartir emociones</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-x"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div class="formulario-contacto">
+                    <button type="button" >
+                        <a href="formulario_contacto.html">CONTACTANOS</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2024 <b>Teatro Apolo</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+#body{
+    background-color: rgb(237, 237, 237);
+}
+/*encabezado*/
+header{
+    position: sticky;  
+    top: 0%; 
+    filter: drop-shadow(2px 2px  10px rgb(0, 38, 255));
+    z-index: 1000;
+}
+/*navegador*/
+nav{
+    background-color: rgb(0, 38, 255);
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 5% 15% 60% 20%;
+    align-items: center;
+} 
+/*encabezado menu desplegable*/
+#boton-menu{
+    height: max-content;
+    width: max-content;
+    margin: 10px ;
+
+}
+#offcanvasExample{
+    width: max-content ;
+    height: 50rem;
+    align-items: center;
+}
+#menu-desplegable-button{
+    background-color: rgb(0, 38, 255);
+    width: 10rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+#menu-desplegable-button a{
+    text-decoration: none;
+    color: white;
+    transition: all 300ms ease;
+}
+#menu-desplegable-button a:hover{
+    color: rgb(236, 164, 0);
+}
+/*encabezado*/
+#logo_cine{
+    width: 60px;
+    margin-left: 3rem;
+    border-radius: 50%;
+}
+#form_buscador_peliculas{
+    width: 35rem;
+    height: max-content;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#input-Buscador{
+    width: 400px;
+    margin-right: 1rem;
+}
+#boton-buscar-container{
+    width: 260px;
+    display: grid;
+    justify-content: center;
+}
+#buscar-button{
+    width: min-content;
+}
+
+/*Sub menu*/
+#subMenu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 3px solid  rgb(2, 57, 255);
+    border-radius: 20%;
+}
+#subMenu button{
+    background-color: rgb(2, 57, 255);
+    text-decoration: none;
+    padding: 5px;
+    width: 150px;
+    
+
+}
+#subMenu button a {
+    text-decoration: none;
+    color: white;
+    transition: all 300ms ease;
+}
+#subMenu button a:hover{
+
+    color: rgb(236, 164, 0);
+}
+/*Seccion peliculas*/
+#seccion-card{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+/*tarjeta de la pelicula*/
+#card-pelicula{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: max-content;
+    width: 15rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    filter: drop-shadow(10px 2px  10px rgb(34, 34, 34));
+    transform-style: preserve-3d ;
+    transition: 0.2s;
+}
+#card-pelicula:hover{
+    transform: translate3d(0%,1rem,16rem);
+    transition: 0.2s;
+    height: max-content;
+    cursor:pointer;
+    width: 15.5rem;
+}
+#card-pelicula #trailer{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#img-poster{
+    width: 100%;
+    height: 20rem;
+    overflow-clip-margin: content-box;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+#titulo-pelicula{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#proximamente-text{
+    margin-top: -20rem;
+    justify-content: center;
+    width: 100px;
+    background-color: rgb(236, 164, 0);
+    padding: 0px;
+    font-size: small;
+    position: absolute;
+    z-index: 100;
+    
+}
+#clasificacion{
+    margin: 0rem 1rem 2rem 1rem;
+    width: min-content;
+    height: min-content;
+    background-color: rgb(29, 120, 24);
+    color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    font-size: small;
+
+}
+#link-trailer{
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
+/*alert*/
+#alert-pelicula{
+    position: absolute;
+    display: none;
+    text-align: center;
+    left: 40%;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(2, 57, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    z-index: 10000;
+    margin: 0px;
+    width: max-content;
+    border-radius: 1rem;
+}
+
+/*Pie de pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: black;
+    
+
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+    border-radius: 80px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color:rgb(2, 57, 255);
+    text-align: center;
+    transition: all 300ms ease;
+    border-radius: 50%;
+
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(236, 164, 0);
+}    
+
+.pie-pagina .grupo-2{
+    background-color: rgb(1, 37, 171);
+    text-align: center;
+    color: #fff;
+}
+/*boton de contacto */
+.pie-pagina .formulario-contacto button{
+    height: 45px;
+    width: 150px;
+    margin: 50px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 164, 0);
+    border-radius: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #e7e7e7;
+    transition-duration: 0.4s;
+}
+.pie-pagina .formulario-contacto button:hover{
+    background-color: rgb(0, 38, 255)
+}
+.pie-pagina .formulario-contacto button:active{
+    background-color: #fff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.pie-pagina .formulario-contacto button a{
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+    
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*Diseno para moviles*/
+@media (max-width: 1200px) and (min-width: 900px) {
+    /* header */
+    nav {
+        display: flex;
+    }
+    #logo_cine{
+        width: 60px;
+        margin: 1rem;
+    }
+    #form_buscador_peliculas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #input-Buscador{
+        margin: 1rem;
+    }
+    #boton-buscar-container{
+        justify-content: start;
+        align-items: start;
+    }
+    #boton-ingresar{
+        justify-content: end;
+        align-items: end;
+    }
+    #seccion-card{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
