@@ -40,6 +40,7 @@ nav{
     color: white;
 }
 /*encabezado*/
+
 #logo_cine{
     width: 60px;
     margin-left: 3rem;
@@ -65,8 +66,8 @@ nav{
     width: min-content;
 }
 #boton-ingresar{
-    width: min-content;
-    margin-left: 11rem;
+    width: max-content;
+    margin-left: 8rem;
 }
 /*Alerta pelicula no encontrada*/
 #alert-pelicula{

@@ -1,3 +1,14 @@
+const nom_usuario = localStorage.getItem('usuario');
+if (nom_usuario) {
+    // Cambiar el texto del <p> dentro del enlace
+    let boton = document.getElementById('boton-ingresar');
+    boton.textContent = nom_usuario; // Cambia el texto a el nombre del usuario
+    boton.onclick=function() { //esta funcion es para que el usuario salga
+        localStorage.removeItem('usuario');
+        boton.href="index.html"
+    };
+}
+
 function buscar() {
     event.preventDefault();
     const pelicula = document.getElementById('buscador').value; 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Apolo-registro</title>
+    <link rel="shortcut icon" href="img/teatro_apolo.ico">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="estilos/index.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/registro.css">
+    <script src="scripts/Ingresar.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+             <!--menu desplegable-->
+            <div>
+                <a class="btn btn-primary " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="boton-menu">
+                    Menu
+                </a>
+                <div class="offcanvas offcanvas-start" id="offcanvasExample"  >
+                    <button id="menu-desplegable-button">
+                        <a href="index.html">Cartelera</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="hoy.html">Hoy</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="Proximamente.html">Proximamente</a>
+                    </button>
+                </div>
+            </div>
+
+            <!--logo del cine-->
+            <a href="index.html"> <img src="img/teatro_apolo.png" alt="" id="logo_cine" > </a>
+
+            <!--Buscador peliculas-->
+            <form class=" container col" id="form_buscador_peliculas" >
+                <div id="input-Buscador">
+                    <input class="form-control " type="search" id="buscador" placeholder="Buscar Pelicula" aria-label="Search">
+                </div>
+                <div id="boton-buscar-container">
+                    <button class="btn btn-primary " id="buscar-button" type="submit" onclick="buscar()" >Buscar</button>
+                </div>
+            </form>
+
+             
+        </nav>
+    </header>
+    <section class="container">
+        <form id="form-registro" >
+            <h2>Registro</h2>
+            <div class="datosDeAcceso">
+                <input type="email" placeholder="Correo" id="correo" >
+                <input type="password" placeholder="Crear clave" id="clave" required>
+                <input type="password" placeholder="Confirmar clave" id="conf-clave" required>
+            </div>
+            <br>
+            <div class="datosPersonales">
+               
+                <select name="" id="tipoDocumento" >
+                    <option value="" disabled selected>Tipo de documento</option>
+                    <option value="cedulaExtrangeria">Cedula extrangeria</option>
+                    <option value="tarjetaIdentidad">Tarjeta de identidad</option>
+                    <option value="ppt">PPT</option>
+                </select>
+                <input type="tel" name="" id="numeroDocumento" placeholder="Numero de documento">
+                <input type="text" placeholder="Nombre" id="nombre" >
+                <input type="text" placeholder="Apellido" id="apellido" >
+                <input type="text" placeholder="Nombre de Usuario" id="usuario" required>
+                <input type="tel" name="" id="telefono" placeholder="Telefono">
+                <label for="fechaNacimiento" id="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="date" name="" id="fechaNacimiento">
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" name="" id="TyC" required> Acepto terminos y condiciones a la politica y privacidad de datos personales del Teatro Apolo.<br>
+                <input type="checkbox" name="" id="Contactar" required> Autorizo recibir informacion de promociones, eventos y lanzamientos del Teatro Apolo por email, SMS, llamadas telefonicas o whatsapp.
+                <br>
+                <br>
+                <button type="submit" class="btn btn-primary">Enviar Registro</button>
+            </div>
+            <a href="ingresar.html">¿Ya estas Registrado? Ingresa aqui.</a>
+
+        </form>
+    </section>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="index.html">
+                        <img src="img/teatro_apolo.png" alt="logo teatro_apolo">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Mas de 35 años regalando sonrisas a niños y adultos</p>
+                <p>Somos una empresa colombiana dedicada a compartir emociones</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#"class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-x"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+                <div class="formulario-contacto">
+                    <button type="button" >
+                        <a href="formulario_contacto.html">CONTACTANOS</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy;2024 <b>Teatro Apolo</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.getElementById('form-registro').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita la recarga de la página
+            registro(); 
+        });
+    </script>
+</body>
+</html>

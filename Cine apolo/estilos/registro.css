@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+.container{
+    height: min-content;
+    width: 1fr;
+    
+}
+
+
+.datosDeAcceso{
+    margin: 5px;
+    padding: 5px;
+    display: grid;
+    border-style: dashed;
+    border-color:  rgb(2, 57, 255);;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 1rem;
+
+}
+
+.datosDeAcceso #correo{
+    grid-column: span 2;
+}
+
+.datosPersonales{
+    margin: 5px;
+    padding: 5px;
+    gap: 10px;
+    border-style: dashed;
+    border-color:  rgb(2, 57, 255);;
+    display: grid;
+
+}
+
+.datosPersonales #tipoDocumento{
+    grid-column: span 2;
+}
+.datosPersonales #numeroDocumento{
+    grid-column: span 2;
+}
+.datosPersonales #fechaNacimiento{
+    grid-column: span 2;
+}
+

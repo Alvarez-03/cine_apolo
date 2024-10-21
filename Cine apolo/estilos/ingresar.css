@@ -1,0 +1,19 @@
+#contenedor-ingresar{
+    height: max-content;
+    width: max-content;
+    padding: 1.5rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    box-shadow: 1px 1px 65px rgb(215, 215, 215);
+}
+#form-ingreso{
+    display: grid;
+    width: max-content;
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+}
+#form-ingreso input{
+    border: none;
+    border-bottom: 2px solid blue;
+}

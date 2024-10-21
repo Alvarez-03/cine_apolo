@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Apolo Ingresar</title>
+    <link rel="shortcut icon" href="img/teatro_apolo.ico">
+    <link rel="stylesheet" href="estilos/ingresar.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
+    <script src="scripts/Ingresar.js"></script>
+</head>
+<body>
+    <!--Contenedor del Ingresar-->
+    <section class="container" id="contenedor-ingresar">
+        <h1>Cine Apolo</h1>
+        <form id="form-ingreso">
+            <h2>Iniciar sesion</h2>
+            <input type="text" placeholder="Usuario" id="usuario" required>
+            <input type="password" placeholder="Clave" id="clave" required>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <a href="registro.html">¿No estas Registrado? Registrate aqui.</a>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('form-ingreso').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita la recarga de la página
+            usuario(); 
+        });
+    </script>
+
+</body>
+</html>
