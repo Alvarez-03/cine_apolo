@@ -7,11 +7,48 @@
     <link rel="shortcut icon" href="img/teatro_apolo.ico">
     <link rel="stylesheet" href="estilos/ingresar.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="estilos/index.css">
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/3885efe377.js" crossorigin="anonymous"></script>
     <script src="scripts/Ingresar.js"></script>
 </head>
 <body>
+
+    <header>
+        <nav>
+             <!--menu desplegable-->
+            <div>
+                <a class="btn btn-primary " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" id="boton-menu">
+                    Menu
+                </a>
+                <div class="offcanvas offcanvas-start" id="offcanvasExample"  >
+                    <button id="menu-desplegable-button">
+                        <a href="index.html">Cartelera</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="hoy.html">Hoy</a>
+                    </button>
+                    <button  id="menu-desplegable-button">
+                        <a href="Proximamente.html">Proximamente</a>
+                    </button>
+                </div>
+            </div>
+
+            <!--logo del cine-->
+            <a href="index.html"> <img src="img/teatro_apolo.png" alt="" id="logo_cine" > </a>
+
+            <!--Buscador peliculas-->
+            <form class=" container col" id="form_buscador_peliculas" >
+                <div id="input-Buscador">
+                    <input class="form-control " type="search" id="buscador" placeholder="Buscar Pelicula" aria-label="Search">
+                </div>
+                <div id="boton-buscar-container">
+                    <button class="btn btn-primary " id="buscar-button" type="submit" onclick="buscar()" >Buscar</button>
+                </div>
+            </form>       
+        </nav>
+    </header>
+
     <!--Contenedor del Ingresar-->
     <section class="container" id="contenedor-ingresar">
         <h1>Cine Apolo</h1>
@@ -23,6 +60,42 @@
             <a href="registro.html">¿No estas Registrado? Registrate aqui.</a>
         </form>
     </section>
+
+
+        <!--Pie de pagina-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="index.html">
+                            <img src="img/teatro_apolo.png" alt="logo teatro_apolo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Mas de 35 años regalando sonrisas a niños y adultos</p>
+                    <p>Somos una empresa colombiana dedicada a compartir emociones</p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#"class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-x"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                    <div class="formulario-contacto">
+                        <button type="button" >
+                            <a href="formulario_contacto.html">CONTACTANOS</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy;2024 <b>Teatro Apolo</b> - Todos los derechos reservados</small>
+            </div>
+        </footer>
 
     <script>
         document.getElementById('form-ingreso').addEventListener('submit', function(event) {

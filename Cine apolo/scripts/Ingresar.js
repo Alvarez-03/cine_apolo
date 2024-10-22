@@ -10,7 +10,6 @@ function usuario() {
         if(usuarios[i].usuario == usuario && usuarios[i].clave == clave){
             localStorage.setItem('usuario', usuario);
             window.location.href="index.html";
-            alert("bienvenido perra")
         }
         else{
             alert("Usuario no encontrado");
